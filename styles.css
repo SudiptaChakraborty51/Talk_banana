@@ -2,7 +2,7 @@
     --primary-color: yellow;
 }
 
-h1 {
+h1, h3 {
     text-align: center;
 }
 
@@ -26,4 +26,13 @@ h1 {
     width: 100px;
     height: 6vh;
     border-radius: 1rem;
+}
+
+#output {
+    height: 10vh;
+    width: 80%;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    padding: 1rem;
 }
