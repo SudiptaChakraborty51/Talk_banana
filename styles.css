@@ -1,0 +1,29 @@
+:root {
+    --primary-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+#txt-input {
+    width: 80%;
+    height: 10vh;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+}
+
+#btn-translate {
+    background-color: var(--primary-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: large;
+    width: 100px;
+    height: 6vh;
+    border-radius: 1rem;
+}
