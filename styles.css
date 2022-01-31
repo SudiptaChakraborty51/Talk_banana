@@ -1,38 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
-    --primary-color: yellow;
+    --primary-color: #facc15;
+    --border-color: #111827;
+    --width-break: 600px;
 }
 
-h1, h3 {
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-#txt-input {
-    width: 80%;
-    height: 10vh;
-    border: 2px solid black;
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
     margin: auto;
-    display: flex;
+    padding: 1rem;
+    max-width: var(--width-break);
+}
+
+.nav-heading {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 1rem;
 }
 
-#btn-translate {
+h3 {
+    text-align: center;
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    font-size: large;
+    border: 2px solid var(--border-color);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+button {
     background-color: var(--primary-color);
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
     font-size: large;
+    font-family: 'Open Sans', sans-serif;
     width: 100px;
-    height: 6vh;
+    min-height: 6vh;
     border-radius: 1rem;
 }
 
 #output {
-    height: 10vh;
-    width: 80%;
-    border: 2px solid black;
-    margin: auto;
-    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 20vh;
+    overflow: scroll;
+    border: 2px solid var(--border-color);
     padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: large;
+}
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
 }
