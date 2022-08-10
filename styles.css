@@ -3,6 +3,7 @@
 :root {
     --primary-color: #facc15;
     --border-color: #111827;
+    --secondary-color: #fef9c3;
     --width-break: 600px;
 }
 
@@ -44,12 +45,26 @@ textarea {
     padding: 1rem;
 }
 
-button {
+.btn {
+    text-align: center;
+}
+
+#btn-translate {
     background-color: var(--primary-color);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 1rem;
+    display: inline;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    width: 100px;
+    min-height: 6vh;
+    border-radius: 1rem;
+}
+
+#btn-clear {
+    background-color: var(--secondary-color);
+    display: inline;
     border: 2px solid var(--border-color);
     cursor: pointer;
     font-size: large;
@@ -79,4 +94,8 @@ footer {
 footer p {
     max-width: var(--width-break);
     margin: auto;
+}
+
+#footer-about {
+    font-weight: bold;
 }

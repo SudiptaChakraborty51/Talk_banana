@@ -1,4 +1,5 @@
 var btnTranslate = document.querySelector("#btn-translate");
+var btnClear = document.querySelector("#btn-clear");
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector("#output");
 
@@ -25,4 +26,10 @@ function clickHandler() {
     .catch(errorHandler)
 }
 
+function clearHandler() {
+    outputDiv.innerHTML="";
+    txtInput.value="";
+}
+
 btnTranslate.addEventListener("click", clickHandler);
+btnClear.addEventListener("click", clearHandler);
