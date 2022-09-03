@@ -15,15 +15,20 @@ function errorHandler(error){
 }
 
 function clickHandler() {
+    outputDiv.innerText="Loading...";
     var textInput = txtInput.value;
-    fetch(getTranslationURL(textInput))
-    .then(response => response.json())
-    // .then(json => console.log(json.contents.translated))
-    .then(json =>{
-        var translatedText = json.contents.translated;
-        outputDiv.innerText = translatedText;
-    })
-    .catch(errorHandler)
+    if(textInput==""){
+        outputDiv.innerHTML="Please enter some text!";
+    } else{
+        fetch(getTranslationURL(textInput))
+        .then(response => response.json())
+        // .then(json => console.log(json.contents.translated))
+        .then(json =>{
+            var translatedText = json.contents.translated;
+            outputDiv.innerText = translatedText;
+        })
+        .catch(errorHandler)
+    }
 }
 
 function clearHandler() {
