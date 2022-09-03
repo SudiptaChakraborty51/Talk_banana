@@ -34,6 +34,12 @@ h3 {
     text-align: center;
 }
 
+#header-img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
 textarea {
     box-sizing: border-box;
     display: block;
