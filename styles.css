@@ -105,3 +105,24 @@ footer p {
 #footer-about {
     font-weight: bold;
 }
+
+#footer-details {
+    margin-bottom: 1rem;
+}
+
+.footer-list {
+    padding-inline-start: 0px;
+    margin: 0px;
+}
+
+.portfolio {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+}
